@@ -1,0 +1,1 @@
+I want to create a helloworld application in python that just outputs the string "I am the world". Make it fully working with a main and so forth.
