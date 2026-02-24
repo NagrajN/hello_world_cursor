@@ -2,7 +2,7 @@ import unittest
 from io import StringIO
 from unittest.mock import patch
 
-from main import add, main
+from main import add, multiply, main
 
 
 class TestMain(unittest.TestCase):
@@ -57,6 +57,31 @@ class TestAdd(unittest.TestCase):
 
     def test_add_returns_correct_type_for_floats(self):
         self.assertIsInstance(add(1.0, 2.0), float)
+
+
+class TestMultiply(unittest.TestCase):
+
+    def test_multiply_two_positive_integers(self):
+        self.assertEqual(multiply(3, 4), 12)
+
+    def test_multiply_positive_and_negative(self):
+        self.assertEqual(multiply(-2, 5), -10)
+
+    def test_multiply_two_negative_integers(self):
+        self.assertEqual(multiply(-3, -4), 12)
+
+    def test_multiply_floats(self):
+        self.assertAlmostEqual(multiply(1.5, 2.0), 3.0, places=10)
+
+    def test_multiply_zero_identity(self):
+        self.assertEqual(multiply(0, 42), 0)
+        self.assertEqual(multiply(42, 0), 0)
+
+    def test_multiply_returns_correct_type_for_ints(self):
+        self.assertIsInstance(multiply(2, 3), int)
+
+    def test_multiply_returns_correct_type_for_floats(self):
+        self.assertIsInstance(multiply(2.0, 3.0), float)
 
 
 if __name__ == "__main__":
