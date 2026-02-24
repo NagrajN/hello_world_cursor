@@ -1,0 +1,12 @@
+# /analyze
+
+When the user types /analyze:
+
+1. Load cs_students.csv using pandas
+2. Show the first 5 rows
+3. Display column names and data types
+4. Calculate basic statistics (mean, median, mode)
+5. Identify any missing values
+6. Suggest 3 potential analyses to explore
+
+Output results in a clear, organized format.

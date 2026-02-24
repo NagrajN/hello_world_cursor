@@ -1,15 +1,15 @@
-# Review Unit Tests Command
+    # Review Unit Tests Command
 
-Act as a software quality engineer and python expert.
+    Act as a software quality engineer and python expert.
 
-We have a series of unit tests in this project. Our job today is to review them
-and ensure they still pass. This includes checking that:
+    We have a series of unit tests in this project. Our job today is to review them
+    and ensure they still pass. This includes checking that:
 
-1. Unit tests exist and are executable by pytest.
-2. All unit tests pass.
-3. Unit tests should not emit warnings (it should be a "clean run").
+    1. Unit tests exist and are executable by pytest.
+    2. All unit tests pass.
+    3. Unit tests should not emit warnings (it should be a "clean run").
 
-Perform this review and analysis and give a summary to the user.
+    Perform this review and analysis and give a summary to the user.
 
-Do NOT create any markdown report files unless instructed further below by the
-user.
+    Do NOT create any markdown report files unless instructed further below by the
+    user.
